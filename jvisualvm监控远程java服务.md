@@ -27,8 +27,10 @@ jstatd -J-Djava.security.policy=D:\java.policy
 java -Djava.rmi.server.hostname=192.168.0.1 -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=1199 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -jar D:\java\remote_jvm-0.0.1-SNAPSHOT.jar &
 ```
 
+```
 192.168.0.1是服务器地址
 
 1199是监控端口
 
 D:\java\remote_jvm-0.0.1-SNAPSHOT.jar是 java 服务的路径
+```
