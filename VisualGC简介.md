@@ -3,6 +3,10 @@
 # Spaces Window
 - Spaces 分为：元空间、 老年代、 新生代
 
+```
+在 JDK8 版本中，JVM 不再有 PermGen 。但类的元数据信息（metadata）还在，只不过不再是存储在连续的堆空间上，而是移动到 Metaspace 的本地内存（Native memory）中。
+```
+
 - 新生代分为 3 个部分： Eden、 S0（Survivor 0）、 S1（Survivor 0）
 
 ```
