@@ -3,10 +3,10 @@
 
 # linux服务器
 ## 新建策略文件
-在任意目录下新建 java.policy 策略文件
+在任意目录下新建 jstatd.policy 策略文件
 
 ```
-# vim /usr/java.policy
+# vim /usr/jstatd.policy
 grant codebase "file:${java.home}/../lib/tools.jar" {
    permission java.security.AllPermission;
 };
@@ -18,26 +18,26 @@ grant codebase "file:${java.home}/../lib/tools.jar" {
 - 默认启动
 
 ```
-jstatd -J-Djava.security.policy=/usr/java.policy
+jstatd -J-Djava.security.policy=/usr/jstatd.policy
 ```
 
 - 指定启动端口
 
 ```
-jstatd -J-Djava.security.policy=/usr/java.policy -p 1099
+jstatd -J-Djava.security.policy=/usr/jstatd.policy -p 1099
 ```
 
 - 指定端口和IP
 
 ```
-jstatd -J-Djava.security.policy=/usr/java.policy -J-Djava.rmi.server.hostname=192.168.0.1 -p 1099
+jstatd -J-Djava.security.policy=/usr/jstatd.policy -J-Djava.rmi.server.hostname=192.168.0.1 -p 1099
 ```
 
 **此时，即可在远程主机名下显示出远程服务器上运行的所有 java 进程。**
 
 # windows服务器
 ## 新建策略文件
-在任意目录下新建 java.policy 策略文件（比如 D 盘），输入以下内容
+在任意目录下新建 jstatd.policy 策略文件（比如 D 盘），输入以下内容
 
 ```
 grant codebase "file:${java.home}/../lib/tools.jar" {
@@ -48,7 +48,7 @@ grant codebase "file:${java.home}/../lib/tools.jar" {
 ## 启动jstatd
 
 ```
-jstatd -J-Djava.security.policy=D:\java.policy
+jstatd -J-Djava.security.policy=D:\jstatd.policy
 ```
 
 ## 添加 jstatd 连接
