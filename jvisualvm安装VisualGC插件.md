@@ -1,6 +1,6 @@
-# jvisualvm官网
+# visualvm官网
 
-[jvisualvm官网](https://visualvm.github.io/index.html "jvisualvm官网")
+[visualvm官网](https://visualvm.github.io/index.html "visualvm官网")
 
 
 # 安装插件
