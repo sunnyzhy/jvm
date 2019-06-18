@@ -1,6 +1,6 @@
-# VisualVM官网
+# 官网
 
-[VisualVM官网](https://visualvm.github.io/index.html "VisualVM官网")
+[https://visualvm.github.io/index.html](https://visualvm.github.io/index.html "VisualVM官网")
 
 
 # 安装插件
