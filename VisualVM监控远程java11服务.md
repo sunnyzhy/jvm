@@ -1,5 +1,5 @@
 # 注意
-在 java11 中策略文件 java.policy 需要修改为以下内容
+在 java11 中策略文件 jstatd.policy 需要修改为以下内容
 
 ```
 grant codebase "jrt:/jdk.jstatd" {
