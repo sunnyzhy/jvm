@@ -1,6 +1,6 @@
 # JProfiler
 
-[JProfiler](https://www.ej-technologies.com/products/jprofiler/overview.html 'JProfiler')
+[JProfiler 官网](https://www.ej-technologies.com/products/jprofiler/overview.html 'JProfiler')
 
 ## JProfiler 远程监控 JVM
 
@@ -28,9 +28,9 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/jprofiler11.1.4/bin/linux-x64
 7. 输入 ```Remote installation directory: 远程服务器上安装的JProfiler目录```，如 ```/usr/local/jprofiler11.1.4```，下一步
 8. 选择 ```Apply configuration when conneting with the JProfiler GUI```，下一步
 9. 端口号默认 ```8849```，下一步
-10. ***非常重要：***，配置完成之后，下一步
-   1. 把 ```C:\Users\user\.jprofiler11\jprofiler_config.xml``` 复制到远程服务器 ```/usr/local/jprofiler11.1.4/config``` 的目录里
-   2. 把 ```-agentpath:/usr/local/jprofiler11.1.4/bin/linux-x64/libjprofilerti.so=port=8849,nowait``` 添加到业务 java 程序的启动参数里，如 ```nohup java -jar -XX:+HeapDumpOnOutOfMemoryError -Xmx256m -Xms256m ./gateway.jar -agentpath:/usr/local/jprofiler11.1.4/bin/linux-x64/libjprofilerti.so=port=8849,nowait  > /dev/null 2>&1 &```
+10. ***非常重要***，配置完成之后，下一步
+      1. 把 ```C:\Users\user\.jprofiler11\jprofiler_config.xml``` 复制到远程服务器 ```/usr/local/jprofiler11.1.4/config``` 的目录里
+      2. 把 ```-agentpath:/usr/local/jprofiler11.1.4/bin/linux-x64/libjprofilerti.so=port=8849,nowait``` 添加到业务 java 程序的启动参数里，如 ```nohup java -jar -XX:+HeapDumpOnOutOfMemoryError -Xmx256m -Xms256m ./gateway.jar -agentpath:/usr/local/jprofiler11.1.4/bin/linux-x64/libjprofilerti.so=port=8849,nowait  > /dev/null 2>&1 &```
 11. 选择 ```Yes, start the session and wait for the remote application.```，完成。
 
 ### 启动远程服务器的 jpenable
